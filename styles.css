@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000000, #434343);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden; /* Ensure no scrollbars appear */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+.container {
+    position: absolute; /* Position relative to the viewport */
+    top: 3%; /* Adjust this value to control the distance from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center; /* Ensure text and elements are centered */
+}
+
+#logo {
+    width: 70%; /* Increased by 15% from 40% */
+    height: auto; /* Maintain aspect ratio */
+    background: transparent;
+    border: none; /* Remove any default border */
+}
+
+#tagline {
+    margin-top: 5px; /* Adjust spacing below the logo */
+    font-size: 1.75em; /* Increased by 15% from 1.5em */
+    color: #fff; /* Change text color to black */
+    font-family: 'Dosis', sans-serif; /* Apply the Dosis font */
+}
+
+.login-container {
+    position: absolute; /* Position relative to the viewport */
+    top: calc(50% + 120px); /* Position below the tagline; adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and adjust vertical position */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 10px;
+}
+
+.wrapper {
+    position: relative;
+    background: transparent;/* Semi-transparent background */
+    width: 400px;
+    height: 450px;
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Increased width to accommodate 15% larger size */
+    border: 5px solid #333;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.wrapper:hover {
+    border: 5px solid #0ef;
+    box-shadow: 0 0 20px #0ef, inset 0 0 20px #0ef;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.inputBox {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+
+.inputBox input {
+    width: 85%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #333;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 10px 0 35px;
+    transition: .5s;
+}
+
+.wrapper:hover .inputBox input {
+    border: 2px solid #0ef;
+    box-shadow: 0 0 10px #0ef, inset 0 0 10px #0ef;
+}
+    
+
+
+.inputBox input::placeholder {
+    color: rgba(255, 255, 255, 3);
+}
+
+.inputBox .icon {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 55px;
+    transition: .5s;
+}
+
+.wrapper:hover .inputBox .icon {
+    color: #0ef;
+}
+
+.forgot-pass{
+    margin: -15px 0 15px;
+
+}
+
+.forgot-pass a {
+    color: #fff;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.register-link {
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.register-link p {
+    color: #fff;
+}
+
+.register-link p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.wrapper:hover .register-link p a {
+    color: #0ef;
+}
+
+.register-link p a:hover {
+     text-decoration: underline;
+}
