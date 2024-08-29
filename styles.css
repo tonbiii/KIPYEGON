@@ -26,14 +26,14 @@ body {
 }
 
 #logo {
-    width: 130%;
+    width: 115%;
     height: auto;
     background: transparent;
     border: none;
 }
 
 #tagline {
-    margin-top: 10px; /* Adjusted margin */
+    margin-top: 5px; /* Adjusted margin */
     font-size: 70%; /* Reduced font size */
     color: #fff;
     font-family: 'Dosis', sans-serif;
@@ -41,7 +41,7 @@ body {
 
 .login-container {
     position: absolute;
-    top: calc(75% + 20px);
+    top: calc(65% + 20px);
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
