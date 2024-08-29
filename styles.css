@@ -26,22 +26,22 @@ body {
 }
 
 #logo {
-    width: 60%; /* Adjust width to be more responsive */
+    width: 110%;
     height: auto;
     background: transparent;
     border: none;
 }
 
 #tagline {
-    margin-top: 15px;
-    font-size: 1.5em; /* Set in em for better scalability */
+    margin-top: 10px; /* Adjusted margin */
+    font-size: 70%; /* Reduced font size */
     color: #fff;
     font-family: 'Dosis', sans-serif;
 }
 
 .login-container {
     position: absolute;
-    top: calc(70% + 20px);
+    top: calc(75% + 20px);
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -53,14 +53,16 @@ body {
 .wrapper {
     position: relative;
     background: #000;
-    width: 320px;
-    height: 300px;
+    width: 280px; /* Adjusted width */
+    height: auto; /* Adjusted height to fit content */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 5px solid #333;
     border-radius: 10px;
+    padding: 20px; /* Added padding */
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
     transition: .5s;
 }
 
@@ -71,19 +73,19 @@ body {
 
 h2 {
     color: #fff;
-    font-size: 1.8em;
+    font-size: 1.5em; /* Adjusted font size */
     text-align: center;
 }
 
 .inputBox {
     position: relative;
-    width: 85%;
-    margin: 20px 0;
+    width: 80%; /* Adjusted width */
+    margin: 10px 0; /* Adjusted margin */
 }
 
 .inputBox input {
-    width: 100%;
-    height: 40px;
+    width: 100%; /* Full width */
+    height: 35px; /* Adjusted height */
     background: transparent;
     border: 2px solid #333;
     outline: none;
@@ -105,10 +107,10 @@ h2 {
 
 .inputBox .icon {
     position: absolute;
-    left: 10px;
+    left: 10px; /* Align with the input box padding */
     color: #fff;
     font-size: 1.2em;
-    line-height: 40px;
+    line-height: 35px; /* Adjusted line height */
     transition: .5s;
 }
 
@@ -117,7 +119,9 @@ h2 {
 }
 
 .forgot-pass {
-    margin: -10px 0 15px;
+    margin: 10px 0; /* Adjusted margin */
+    width: 80%; /* Align with input box */
+    text-align: left; /* Align text with input box */
 }
 
 .forgot-pass a {
@@ -131,23 +135,24 @@ h2 {
 }
 
 button {
-    position: relative;
-    width: 100%;
-    height: 40px;
+    width: 80%; /* Align with input box */
+    height: 35px; /* Adjusted height */
     background: #333;
     border: none;
     outline: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 0.9em; /* Adjusted font size */
     color: #fff;
     font-weight: 500;
+    margin-top: 10px; /* Adjusted margin to match spacing */
 }
 
 .register-link {
     font-size: 0.8em;
     text-align: center;
     margin: 20px 0;
+    width: 80%; /* Align with input box */
 }
 
 .register-link p {
@@ -167,38 +172,4 @@ button {
 
 .register-link p a:hover {
     text-decoration: underline;
-}
-
-/* Media Query for smaller devices */
-@media only screen and (max-width: 768px) {
-    #logo {
-        width: 80%; /* Increase logo size on smaller screens */
-    }
-
-    #tagline {
-        font-size: 2em; /* Increase tagline size on smaller screens */
-    }
-
-    .login-container {
-        top: 80%; /* Push login container lower on smaller screens */
-    }
-
-    .wrapper {
-        width: 90%; /* Adjust wrapper size for smaller screens */
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #logo {
-        width: 100%; /* Further increase logo size on very small screens */
-    }
-
-    #tagline {
-        font-size: 2.5em; /* Further increase tagline size on very small screens */
-    }
-
-    .wrapper {
-        width: 95%;
-    }
 }
