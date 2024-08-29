@@ -4,61 +4,61 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #000000, #434343);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;
+    background: -webkit-linear-gradient(to bottom, #000000, #434343);
+    background: linear-gradient(to bottom, #000000, #434343);
     color: #000;
     font-family: Arial, sans-serif;
     text-align: center;
-    overflow: hidden; /* Ensure no scrollbars appear */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    position: absolute; /* Position relative to the viewport */
-    top: 3%; /* Adjust this value to control the distance from the top */
+    position: absolute;
+    top: 20%;
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    text-align: center; /* Ensure text and elements are centered */
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 #logo {
-    width: 70%; /* Increased by 15% from 40% */
-    height: auto; /* Maintain aspect ratio */
+    width: 90%;
+    height: auto;
     background: transparent;
-    border: none; /* Remove any default border */
+    border: none;
 }
 
 #tagline {
-    margin-top: 5px; /* Adjust spacing below the logo */
-    font-size: 1.75em; /* Increased by 15% from 1.5em */
-    color: #fff; /* Change text color to black */
-    font-family: 'Dosis', sans-serif; /* Apply the Dosis font */
+    margin-top: 15px;
+    font-size: 80%;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
 }
 
 .login-container {
-    position: absolute; /* Position relative to the viewport */
-    top: calc(50% + 120px); /* Position below the tagline; adjust as needed */
+    position: absolute;
+    top: calc(75% + 20px);
     left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and adjust vertical position */
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
-    border-radius: 10px;
+    background: transparent;
 }
 
 .wrapper {
     position: relative;
-    background: transparent;/* Semi-transparent background */
-    width: 400px;
-    height: 450px;
-    justify-content: center;
+    background: #000; /* Ensure the background color matches the container */
+    width: 320px; /* Fixed width for consistency */
+    height: 300px; /* Fixed height for consistency */
     display: flex;
-    align-items: center; /* Increased width to accommodate 15% larger size */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 5px solid #333;
     border-radius: 10px;
     transition: .5s;
@@ -71,25 +71,24 @@ body {
 
 h2 {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
 }
 
-
 .inputBox {
     position: relative;
-    width: 320px;
-    margin: 30px 0;
+    width: 85%;
+    margin: 20px 0;
 }
 
 .inputBox input {
-    width: 85%;
-    height: 50px;
+    width: 100%;
+    height: 40px;
     background: transparent;
     border: 2px solid #333;
     outline: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 0.9em;
     color: #fff;
     padding: 0 10px 0 35px;
     transition: .5s;
@@ -99,11 +98,9 @@ h2 {
     border: 2px solid #0ef;
     box-shadow: 0 0 10px #0ef, inset 0 0 10px #0ef;
 }
-    
-
 
 .inputBox input::placeholder {
-    color: rgba(255, 255, 255, 3);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .inputBox .icon {
@@ -111,7 +108,7 @@ h2 {
     left: 10px;
     color: #fff;
     font-size: 1.2em;
-    line-height: 55px;
+    line-height: 40px;
     transition: .5s;
 }
 
@@ -119,14 +116,13 @@ h2 {
     color: #0ef;
 }
 
-.forgot-pass{
-    margin: -15px 0 15px;
-
+.forgot-pass {
+    margin: -10px 0 15px;
 }
 
 .forgot-pass a {
     color: #fff;
-    font-size: .9em;
+    font-size: 0.8em;
     text-decoration: none;
 }
 
@@ -134,11 +130,10 @@ h2 {
     text-decoration: underline;
 }
 
-
 button {
     position: relative;
     width: 100%;
-    height: 45px;
+    height: 40px;
     background: #333;
     border: none;
     outline: none;
@@ -149,11 +144,10 @@ button {
     font-weight: 500;
 }
 
-
 .register-link {
-    font-size: .9em;
+    font-size: 0.8em;
     text-align: center;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 .register-link p {
@@ -172,5 +166,5 @@ button {
 }
 
 .register-link p a:hover {
-     text-decoration: underline;
+    text-decoration: underline;
 }
