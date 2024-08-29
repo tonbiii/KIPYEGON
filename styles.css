@@ -171,10 +171,11 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #000;
+    background-color: #0000;
     padding: 20px 0;
     text-align: center;
 }
+
 
 .social-icons a {
     display: inline-block; /* Ensures icons are inline */
