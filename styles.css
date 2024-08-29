@@ -47,7 +47,7 @@ body {
     position: relative;
     background: #000;
     width: 280px; /* Width remains the same */
-    height: 265px; /* Slightly increased height */
+    height: 280px; /* Slightly increased height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +57,7 @@ body {
     padding: 15px; /* Padding remains the same */
     box-sizing: border-box; /* Ensure padding is included in height calculation */
     transition: .5s;
+    padding-bottom: 20px;
 }
 
 .wrapper:hover {
