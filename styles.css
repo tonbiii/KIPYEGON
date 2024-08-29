@@ -5,8 +5,8 @@ body {
     padding: 0;
     height: 100vh;
     background: #000000;
-    background: -webkit-linear-gradient(to bottom, #000000, #434343);
-    background: linear-gradient(to bottom, #000000, #434343);
+    background: -webkit-linear-gradient(to bottom, #000000, #303030);
+    background: linear-gradient(to bottom, #000000, #303030);
     color: #000;
     font-family: Arial, sans-serif;
     text-align: center;
