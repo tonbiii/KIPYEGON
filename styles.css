@@ -20,7 +20,7 @@ body {
 .container {
     position: absolute;
     top: 10%;
-    left: 46%;
+    left: 44%;
     transform: translateX(-50%);
     text-align: center;
 }
