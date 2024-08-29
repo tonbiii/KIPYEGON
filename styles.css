@@ -20,13 +20,13 @@ body {
 .container {
     position: absolute;
     top: 10%;
-    left: 50%;
+    left: 46%;
     transform: translateX(-50%);
     text-align: center;
 }
 
 #logo {
-    width: 110%;
+    width: 130%;
     height: auto;
     background: transparent;
     border: none;
@@ -53,15 +53,15 @@ body {
 .wrapper {
     position: relative;
     background: #000;
-    width: 280px; /* Adjusted width */
-    height: auto; /* Adjusted height to fit content */
+    width: 280px; /* Width remains the same */
+    height: 258px; /* Slightly increased height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 5px solid #333;
     border-radius: 10px;
-    padding: 20px; /* Added padding */
+    padding: 15px; /* Padding remains the same */
     box-sizing: border-box; /* Ensure padding is included in height calculation */
     transition: .5s;
 }
@@ -73,19 +73,19 @@ body {
 
 h2 {
     color: #fff;
-    font-size: 1.5em; /* Adjusted font size */
+    font-size: 1.5em; /* Font size remains the same */
     text-align: center;
 }
 
 .inputBox {
     position: relative;
-    width: 80%; /* Adjusted width */
-    margin: 10px 0; /* Adjusted margin */
+    width: 80%; /* Width remains the same */
+    margin: 10px 0; /* Margin remains the same */
 }
 
 .inputBox input {
-    width: 100%; /* Full width */
-    height: 35px; /* Adjusted height */
+    width: 100%; /* Full width remains the same */
+    height: 34px; /* Slightly increased height */
     background: transparent;
     border: 2px solid #333;
     outline: none;
@@ -110,7 +110,7 @@ h2 {
     left: 10px; /* Align with the input box padding */
     color: #fff;
     font-size: 1.2em;
-    line-height: 35px; /* Adjusted line height */
+    line-height: 34px; /* Adjusted line height */
     transition: .5s;
 }
 
@@ -119,8 +119,8 @@ h2 {
 }
 
 .forgot-pass {
-    margin: 10px 0; /* Adjusted margin */
-    width: 80%; /* Align with input box */
+    margin: 10px 0; /* Margin remains the same */
+    width: 100%; /* Align with input box */
     text-align: left; /* Align text with input box */
 }
 
@@ -135,24 +135,24 @@ h2 {
 }
 
 button {
-    width: 80%; /* Align with input box */
-    height: 35px; /* Adjusted height */
+    width: 100%; /* Align with input box */
+    height: 34px; /* Slightly increased height */
     background: #333;
     border: none;
     outline: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9em; /* Adjusted font size */
+    font-size: 0.9em; /* Font size remains the same */
     color: #fff;
     font-weight: 500;
-    margin-top: 10px; /* Adjusted margin to match spacing */
+    margin-top: 10px; /* Margin remains the same */
 }
 
 .register-link {
     font-size: 0.8em;
     text-align: center;
-    margin: 20px 0;
-    width: 80%; /* Align with input box */
+    margin: 10px 0; /* Margin remains the same */
+    width: 100%; /* Align with input box */
 }
 
 .register-link p {
