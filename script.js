@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const logo = document.getElementById('logo');
-    const animationDuration = 8000; // Duration for slide in and slide out in milliseconds (8 seconds)
-    const stayDuration = 8000; // Duration for staying calm in milliseconds (8 seconds)
+    const animationDuration = 16000; // Duration for slide in and slide out in milliseconds (8 seconds)
+    const stayDuration = 16000; // Duration for staying calm in milliseconds (8 seconds)
 
     const animateLogo = () => {
         logo.classList.remove('animate__animated', 'animate__backInLeft', 'animate__bounceIn', 'animate__backOutRight', 'animate__heartBeat');

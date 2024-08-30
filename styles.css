@@ -19,7 +19,7 @@ body {
 
 .container {
     position: absolute;
-    top: var(--logo-top, 0%);
+    top: var(--logo-top, -5%);
     left: 50%;
     transform: translateX(-50%) scale(var(--container-scale, 2));
     text-align: center;
