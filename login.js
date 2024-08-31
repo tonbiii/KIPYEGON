@@ -6,7 +6,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     var password = document.getElementById("password").value;
 
     // Check if credentials are correct
-    if (username === "KIPYEGON" && password === "Tony12706#") {
+    if ((username === "KIPYEGON" && password === "Tony12706#") || 
+        (username === "MIKEBII" && password === "Bootstrins.")) {
         // Redirect to dashboard if login is successful
         window.location.href = "dashboard/dashboard.html";
     } else {
@@ -15,9 +16,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         // Show an error message if login fails
         document.getElementById("error-message").textContent = "Invalid username or password!";
     }
-    
-  
 });
+
 
 // Toggle Password Visibility
 const togglePassword = document.getElementById('togglePassword');

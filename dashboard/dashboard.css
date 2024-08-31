@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,14 +16,112 @@ body {
     background: linear-gradient(to bottom, #000000, #303030);
 }
 
-.logo-container {
-    position: absolute;
-    top: -3%; /* Adjust as needed */
-    left: 3%; /* Adjust as needed */
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
-/* Resize the logo */
+.sidenav {
+    width: 260px; /* Set sidebar width as percentage for responsiveness */
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+/* Scrollbar styling for Webkit browsers (Chrome, Safari) */
+.container .sidenav {
+    overflow-y: scroll; /* Ensure scroll functionality */
+    scrollbar-width: thin; /* Thin scrollbar for non-Webkit browsers */
+    scrollbar-color: transparent transparent; /* Invisible scrollbar handle and track */
+    position: relative;
+}
+
+/* Customize Webkit scrollbar */
+.container .sidenav::-webkit-scrollbar {
+    width: 4px; /* Thinner scrollbar */
+    background: transparent; /* Transparent track */
+}
+
+/* Handle (the part of the scrollbar that moves) */
+.container .sidenav::-webkit-scrollbar-thumb {
+    background-color: #119aaf; /* Custom blue color for the scrollbar handle */
+    border-radius: 10px; /* Round corners for the scrollbar */
+    transition: opacity 0.3s; /* Smooth transition for hiding */
+}
+
+/* Hide scrollbar by default and show on scroll */
+.container .sidenav:hover::-webkit-scrollbar-thumb {
+    opacity: 1; /* Show scrollbar when hovering */
+}
+
+.container .sidenav::-webkit-scrollbar-thumb {
+    opacity: 0; /* Hide scrollbar by default */
+}
+
+.logo-container {
+    position: relative;
+    top: 0%; /* Adjust logo position from the top */
+    left: 35%; /* Adjust logo position from the left */
+   
+}
+
 .small-logo {
-    width: 35%; /* Adjust percentage as needed */
+    width: 40%; /* Adjust logo size as percentage for responsiveness */
     height: auto;
+    transform: scale(2); /* Magnify the logo slightly */
+}
+
+.menu_text {
+    margin-top: 25px;
+}
+
+.menu_text p{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 25px;
+    color: #fff;
+}
+
+.icon_items ul {
+    list-style: none;
+    margin-top: 45px;
+}
+
+.icon_items ul li {
+    cursor: pointer;
+    margin: 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.icon_items ul li:hover{
+    background: #119aaf;
+
+
+}
+
+.icon_items ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 13px; 
+    padding-left: -60px;
+    color: white;
+    text-decoration: none;
+    width: 100%; 
+    height: 100%; 
+    border-radius: 8px; 
+}
+
+.icon_items ul li a i {
+    margin-right: 12px; /* Space between icon and text */
+    font-size: 18px; /* Adjust icon size */
 }
