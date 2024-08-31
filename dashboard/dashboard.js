@@ -20,3 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
         sidenav.classList.add('collapsed');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the logout link element
+    const logoutLink = document.querySelector('.icon_items ul li a[href="../index.html"]');
+
+    // Add a click event listener to the logout link
+    if (logoutLink) {
+        logoutLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            // Perform any necessary logout actions here (e.g., clearing session data)
+
+            // Redirect to index.html
+            window.location.href = '../index.html';
+        });
+    }
+});
