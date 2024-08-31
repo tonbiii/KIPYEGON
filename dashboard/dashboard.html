@@ -9,9 +9,18 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidenav">
+        <div class="sidenav collapsed">
+            <!-- Expand Icon (shown when collapsed) -->
+            <i class="menu-btn fa-solid fa-bars"></i>
+
+            <!-- Close Icon (shown when expanded) -->
+            <i class="close-btn fa-regular fa-circle-xmark"></i>
+
             <div class="logo-container">
-                <img src="logo.svg" alt="Logo" class="small-logo">
+                <!-- Logo for expanded state -->
+                <img src="logo.svg" alt="Logo" class="expanded-logo">
+                <!-- Logo for collapsed state -->
+                <img src="collapsed-logo.svg" alt="Collapsed Logo" class="collapsed-logo">
             </div>
 
             <div class="menu_text">
@@ -20,44 +29,21 @@
 
             <div class="icon_items">
                 <ul>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-gauge"></i>My Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-mobile"></i> Mobile Wallet</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-brands fa-btc"></i> Crypto Wallet</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-university"></i> Bank Wallet</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-money-bill-trend-up"></i></i> Investment Tracker</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-wallet"></i> Spending Tracker</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-hand-holding-dollar"></i> Earnings Tracker</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-piggy-bank"></i> Savings Tracker</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-credit-card"></i> Debt Tracker</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-                    </li>
-
+                    <li><a href="#"><i class="fa-solid fa-gauge"></i><span>My Dashboard</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-mobile"></i><span>Mobile Wallet</span></a></li>
+                    <li><a href="#"><i class="fa-brands fa-btc"></i><span>Crypto Wallet</span></a></li>
+                    <li><a href="#"><i class="fas fa-university"></i><span>Bank Wallet</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-money-bill-trend-up"></i><span>Investment Tracker</span></a></li>
+                    <li><a href="#"><i class="fas fa-wallet"></i><span>Spending Tracker</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i><span>Earnings Tracker</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-piggy-bank"></i><span>Savings Tracker</span></a></li>
+                    <li><a href="#"><i class="fas fa-credit-card"></i><span>Debt Tracker</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
                 </ul>
             </div>
-
-
         </div>
     </div>
 
-
+    <script src="dashboard.js"></script>
 </body>
 </html>

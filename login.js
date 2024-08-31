@@ -18,27 +18,34 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     }
 });
 
-
 // Toggle Password Visibility
 const togglePassword = document.getElementById('togglePassword');
-const password = document.getElementById('password');
+const passwordField = document.getElementById('password');
 
 togglePassword.addEventListener('click', function () {
     // Toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordField.setAttribute('type', type);
 
     // Toggle the eye icon
     this.setAttribute('name', type === 'password' ? 'eye-off' : 'eye');
 });
 
+// Prevent special characters and spaces in username field
+document.getElementById('username').addEventListener('input', function() {
+    this.value = this.value.replace(/[^a-zA-Z0-9]/g, ''); // Allow only letters and numbers
+});
 
+// Prevent spaces in password field
+passwordField.addEventListener('input', function() {
+    this.value = this.value.replace(/\s/g, ''); // Remove any spaces entered
+});
 
-
+// Logo animation logic
 document.addEventListener('DOMContentLoaded', () => {
     const logo = document.getElementById('logo');
-    const animationDuration = 20000; // Duration for slide in and slide out in milliseconds (8 seconds)
-    const stayDuration = 20000; // Duration for staying calm in milliseconds (8 seconds)
+    const animationDuration = 20000; // Duration for slide in and slide out in milliseconds
+    const stayDuration = 20000; // Duration for staying calm in milliseconds
 
     const animateLogo = () => {
         logo.classList.remove('animate__animated', 'animate__backInLeft', 'animate__bounceIn', 'animate__backOutRight', 'animate__heartBeat');

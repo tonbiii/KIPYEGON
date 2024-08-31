@@ -23,14 +23,47 @@ body {
 }
 
 .sidenav {
-    width: 260px; /* Set sidebar width as percentage for responsiveness */
+    width: 260px; /* Adjust this value to change the expanded width */
     height: 100vh;
     background-color: #000;
     position: fixed;
-    overflow-y: auto;
     top: 0;
     left: 0;
     padding-top: 20px;
+    transition: width 0.3s ease; /* Smooth transition for expanding/collapsing */
+}
+
+/* Sidebar collapsed state */
+.sidenav.collapsed {
+    width: 80px; /* Adjust this value to change the collapsed width */
+}
+
+/* Increase space before the first icon in the collapsed state */
+.sidenav.collapsed .icon_items ul li:first-child {
+    margin-top: 130px; /* Increase space between the first icon and the menu icon */
+}
+
+/* Reduce spacing between subsequent icons in the collapsed state */
+.sidenav.collapsed .icon_items ul li:not(:first-child) {
+    margin-top: 5px; /* Adjust this value to reduce spacing between icons */
+}
+
+/* Hide the text inside the icons when collapsed */
+.sidenav.collapsed .menu_text,
+.sidenav.collapsed .icon_items ul li a span {
+    display: none; /* Hide text */
+}
+
+/* Adjust icon alignment and size when collapsed */
+.sidenav.collapsed .icon_items ul li {
+    margin: 5px 0; /* Adjust margin for collapsed state */
+    padding: 5px; /* Adjust padding for collapsed state */
+}
+
+/* Adjust icon alignment and size when collapsed */
+.sidenav.collapsed .icon_items ul li a i {
+    margin-right: 0; /* Remove space between icon and text */
+    font-size: 22px; /* Increase icon size */
 }
 
 /* Scrollbar styling for Webkit browsers (Chrome, Safari) */
@@ -65,55 +98,87 @@ body {
 
 .logo-container {
     position: relative;
-    top: 0%; /* Adjust logo position from the top */
-    left: 35%; /* Adjust logo position from the left */
-   
+    top: 20px; /* Adjust top distance from the top of the sidebar */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
 }
 
-.small-logo {
-    width: 40%; /* Adjust logo size as percentage for responsiveness */
+.expanded-logo {
+    display: block; /* Show the expanded logo */
+    width: 180px; /* Adjust the width as needed */
     height: auto;
-    transform: scale(2); /* Magnify the logo slightly */
+    position: absolute;
+    left: 12%;
+    margin-top: -43px; /* Adjust positioning if necessary */
+}
+
+.collapsed-logo {
+    display: none; /* Hide the collapsed logo when expanded */
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    position: absolute; /* Adjust positioning if necessary */
+    left: -45%;
+    margin-top: -10px;
+}
+
+/* Show the collapsed logo when sidebar is collapsed */
+.sidenav.collapsed .expanded-logo {
+    display: none; /* Hide expanded logo */
+}
+
+.sidenav.collapsed .collapsed-logo {
+    display: block; /* Show collapsed logo */
+}
+
+/* Ensure expanded logo is visible when sidebar is not collapsed */
+.sidenav:not(.collapsed) .expanded-logo {
+    display: block; /* Show expanded logo */
+}
+
+.sidenav:not(.collapsed) .collapsed-logo {
+    display: none; /* Hide collapsed logo */
 }
 
 .menu_text {
-    margin-top: 25px;
+    margin-top: 150px; /* Adjust space between the top and the menu text */
+    margin-bottom: 0;
 }
 
-.menu_text p{
+.menu_text p {
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    padding-left: 25px;
+    padding-left: 35px;
     color: #fff;
+}
+
+.icon_items {
+    margin-top: 30px; /* Adjust space between menu text and the first icon */
 }
 
 .icon_items ul {
     list-style: none;
-    margin-top: 45px;
+    padding: 0;
 }
 
 .icon_items ul li {
     cursor: pointer;
-    margin: 14px;
+    margin: 12px; /* Adjust this value for default spacing */
     border-radius: 8px;
     display: flex;
     align-items: center;
     transition: 0.5s ease;
 }
 
-.icon_items ul li:hover{
+.icon_items ul li:hover {
     background: #119aaf;
-
-
 }
 
 .icon_items ul li a {
     display: flex;
     align-items: center;
     justify-content: flex-start; 
-    padding: 13px; 
-    padding-left: -60px;
+    padding: 20px; 
     color: white;
     text-decoration: none;
     width: 100%; 
@@ -124,4 +189,57 @@ body {
 .icon_items ul li a i {
     margin-right: 12px; /* Space between icon and text */
     font-size: 18px; /* Adjust icon size */
+}
+
+/* Toggle buttons */
+.menu-btn {
+    font-size: 18px; /* Adjust size of the menu icon */
+    color: white; /* Ensure the icon is white */
+    display: none; /* Hidden by default unless collapsed */
+    transition: 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Position of the menu icon when collapsed */
+}
+
+/* Close (X) Button */
+.close-btn {
+    font-size: 18px; /* Adjust size of the close icon */
+    color: white; /* Ensure the icon is white */
+    display: none; /* Hidden by default unless expanded */
+    transition: 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Position of the close icon */
+}
+
+/* Show the close button when expanded */
+.sidenav:not(.collapsed) .close-btn {
+    display: block;
+}
+
+/* Hide the close button when collapsed */
+.sidenav.collapsed .close-btn {
+    display: none;
+}
+
+/* Show the menu button when collapsed */
+.sidenav.collapsed .menu-btn {
+    display: block;
+}
+
+/* Hide the menu button when expanded */
+.sidenav:not(.collapsed) .menu-btn {
+    display: none;
+}
+
+/* Ensure proper alignment for both buttons */
+.sidenav .menu-btn {
+    z-index: 1; /* Ensure menu button is on top */
+}
+
+.sidenav .close-btn {
+    z-index: 1; /* Ensure close button is on top */
 }
