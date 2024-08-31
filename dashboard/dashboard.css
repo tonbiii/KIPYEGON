@@ -10,12 +10,12 @@ body {
 /* Position the logo on the top-left */
 .logo-container {
     position: absolute;
-    top: -55px;
-    left: 10px;
+    top: -20px;
+    left: 30px;
 }
 
 /* Resize the logo */
 .small-logo {
-    width: 180px; /* Adjust the width as needed */
+    width: 150px; /* Adjust the width as needed */
     height: auto;
 }
