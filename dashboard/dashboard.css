@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #000000;
+    background: -webkit-linear-gradient(to bottom, #000000, #303030);
+    background: linear-gradient(to bottom, #000000, #303030);
+}
+
+/* Position the logo on the top-left */
+.logo-container {
+    position: absolute;
+    top: -55px;
+    left: 10px;
+}
+
+/* Resize the logo */
+.small-logo {
+    width: 180px; /* Adjust the width as needed */
+    height: auto;
+}

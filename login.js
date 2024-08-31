@@ -1,3 +1,40 @@
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from submitting the usual way
+
+    // Get username and password input values
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Check if credentials are correct
+    if (username === "KIPYEGON" && password === "Tony12706#") {
+        // Redirect to dashboard if login is successful
+        window.location.href = "dashboard/dashboard.html";
+    } else {
+        // Clear the password input field on failed login attempt
+        document.getElementById("password").value = "";
+        // Show an error message if login fails
+        document.getElementById("error-message").textContent = "Invalid username or password!";
+    }
+    
+  
+});
+
+// Toggle Password Visibility
+const togglePassword = document.getElementById('togglePassword');
+const password = document.getElementById('password');
+
+togglePassword.addEventListener('click', function () {
+    // Toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+
+    // Toggle the eye icon
+    this.setAttribute('name', type === 'password' ? 'eye-off' : 'eye');
+});
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const logo = document.getElementById('logo');
     const animationDuration = 20000; // Duration for slide in and slide out in milliseconds (8 seconds)
