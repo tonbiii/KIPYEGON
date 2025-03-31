@@ -8,6 +8,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     // Check if credentials are correct
     if ((username === "KIPYEGON" && password === "Tony12706#") || 
         (username === "MIKEBII" && password === "Bootstrins.") ||
+        (username === "JULIA" && password === "KIPJUJU") ||
         (username === "KENZIE" && password === "Kenzie123")) {
         // Redirect to dashboard if login is successful
         window.location.href = "dashboard/dashboard.html";
